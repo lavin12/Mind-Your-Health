@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+	<style>
+		form {
+			max-width: 600px; /* set the maximum width of the form */
+			margin: 0 auto; /* center the form horizontally */
+			padding: 20px; /* add some padding to the form */
+			background-color: #f2f2f2; /* set the background color of the form */
+			border-radius: 5px; /* add some border radius to the form */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a box shadow to the form */
+		}
+
+		label {
+			display: block; /* display each label on its own line */
+			margin-bottom: 10px; /* add some margin between labels */
+		}
+
+		input[type=text], textarea {
+			width: 100%; /* make the text inputs and textarea fill the entire form */
+			padding: 10px; /* add some padding to the text inputs and textarea */
+			border-radius: 3px; /* add some border radius to the text inputs and textarea */
+			border: 1px solid #ccc; /* add a border to the text inputs and textarea */
+			box-sizing: border-box; /* include padding and border in the element's total width */
+			resize: vertical; /* allow the textarea to be resized vertically */
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50; /* set the background color of the submit button */
+			color: #fff; /* set the text color of the submit button */
+			padding: 10px 20px; /* add some padding to the submit button */
+			border: none; /* remove the border from the submit button */
+			border-radius: 3px; /* add some border radius to the submit button */
+			cursor: pointer; /* change the cursor to a pointer when hovering over the submit button */
+		}
+
+		input[type=submit]:hover {
+			background-color: #3e8e41; /* change the background color of the submit button when hovering over it */
+		}
+	</style>
+</head>
+<body>
+
+	<form action="submit-feedback.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" required>
+
+		<label for="feedback">Feedback:</label>
+		<textarea id="feedback" name="feedback" required></textarea>
+
+		<input type="submit" value="Submit Feedback">
+	</form>
+
+</body>
+</html>

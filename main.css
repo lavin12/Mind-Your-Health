@@ -1,0 +1,215 @@
+body 
+{
+    background-image: url("towfiqu-barbhuiya-w8p9cQDLX7I-unsplash.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+  }
+
+
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+button {
+font-size: 1.5em;
+padding: 1em;
+background-color: #0099cc;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+header {
+    background-color: #786fef;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header img {
+    height: 50px;
+  }
+
+
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav li {
+    margin-left: 20px;
+  }
+  
+  header nav li:first-child {
+    margin-left: 0;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+nav {
+    background-color: #c5e98c;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #a2d0f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: ;
+    width: 80%; /* adjust the width as needed */
+    margin: 0 auto; 
+}
+.carousel-inner{
+    max-width: 800px; /* set the maximum width of the slideshow container */
+    position: relative;
+    margin: auto; /* center the slideshow container */
+}
+
+.carousel-indicators {
+    width: 100%; /* set the width of the slideshow images to 100% */
+    height: auto; /* set the height of the slideshow images to auto */
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+ul, ol {
+    margin: 0 0 10px 20px;
+}
+
+.result{
+    text-align: center;
+}
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0077;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}

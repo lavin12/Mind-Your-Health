@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Self-Assessment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="record.js">
+</head>
+<body>
+    <header>
+		<img src="logo.png" alt="My Website Logo">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<h1>BODY ANALYSER</h1>
+	<form action="submit-form.php" method="POST">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+		<label for="age">Age:</label>
+		<select id="age" name="age" required>
+			<option value="">Select</option>
+			<option value="1-7">1-7</option>
+            <option value="8-18">8-18</option>
+            <option value="18-25">18-25</option>
+			<option value="25-60">25-60</option>
+			<option value="60 above">60 above</option>
+		</select><br><br>
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" required>
+			<option value="">Select</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select><br><br>
+
+		<label for="Weight">Weight:</label>
+		<input type="number" id="Weight" name="Weight" min="0" max="120" required><br><br>
+
+        <label for="Height">Height:</label>
+		<input type="number" id="Weight" name="Weight" min="0" max="120" required><br><br>
+
+        <label for="What type of food did you  consume in last 24 hours?">What type of food did you  consume in last 24 hours?</label><br>
+		<input type="checkbox" id="Junk Food" name="What type of food did you  consume in last 24 hours?[]" value="Junk food">
+		<label for="Junk Food">Junk Food</label><br>
+		<input type="checkbox" id="Drinks" name="What type of food did you  consume in last 24 hours?[]" value="Drinks">
+		<label for="Drinks">Drinks</label><br>
+		<input type="checkbox" id="Light Food" name="What type of food did you  consume in last 24 hours?[]" value="Light Food">
+		<label for="Light Food">Light Food</label><br>
+		<input type="checkbox" id="Other" name="What type of food did you  consume in last 24 hours?[]" value="Other">
+		<label for="other">other</label><br><br>
+
+
+
+		<label for="Are_you_alchoholic?">Are you alchoholic?</label><br>
+		<input type="radio" id="yes" name="Are_you_alchoholic?" value="Yes" required>
+		<label for="yes">Yes</label><br>
+		<input type="radio" id="no" name="Are_you_alchoholic?" value="No">
+		<label for="no">No</label><br><br>
+
+		<label for="Walking">Average walking distance</label>
+		<select id="Walking" name="Walking" required>
+			<option value="">Select</option>
+			<option value="(100-500)m">(100-500)m</option>
+            <option value="(600-1000)m">(600-1000)m</option>
+            <option value="(1-1.5)km">(1-1.5)km</option>
+			<option value="more than 1.5">more than 1.5</option>
+			<option value="I don't do walking">I don't do walking</option>
+		</select><br><br>
+
+        <label for="Sleep">Average walking distance</label>
+		<select id="Walking" name="Walking" required>
+			<option value="">Select</option>
+			<option value="(100-500)m">(100-500)m</option>
+            <option value="(600-1000)m">(600-1000)m</option>
+            <option value="(1-1.5)km">(1-1.5)km</option>
+			<option value="more than 1.5">more than 1.5</option>
+			<option value="I don't do walking">I don't do walking</option>
+		</select><br><br>
+         <form action="record.php">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

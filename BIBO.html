@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Breathe In, Breathe Out Exercise</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0099cc;
+      transition: background-color 1s ease;
+    }
+    h1 {
+      font-size: 5em;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 2px 2px #000000;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Breathe In</h1>
+
+<button onclick="startBreathing()">Start Breathing</button>
+
+<script>
+function startBreathing() {
+  var body = document.body;
+  var title = document.querySelector("h1");
+  var count = 0;
+  var interval = setInterval(function() {
+    if (count % 4 == 0) {
+      title.innerHTML = "Breathe In";
+      body.style.backgroundColor = "#ff6666";
+    } else if (count % 4 == 2) {
+      title.innerHTML = "Breathe Out";
+      body.style.backgroundColor = "#0099cc";
+    }
+    count++;
+    if (count > 20) {
+      clearInterval(interval);
+      title.innerHTML = "Exercise Complete";
+      body.style.backgroundColor = "#66ff66";
+    }
+  }, 3000);
+}
+</script>
+
+</body>
+</html>
